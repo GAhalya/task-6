@@ -1,4 +1,5 @@
 📊**Sales Trend Analysis Using Aggregations**
+
 📌 **Overview**
 This project demonstrates how to perform sales trend analysis in SQL using aggregation functions and related clauses. The goal is to explore customer, product, and order data to derive meaningful insights such as monthly sales trends, product performance, and country-wise distribution of customers.
 
@@ -17,22 +18,26 @@ This project demonstrates how to perform sales trend analysis in SQL using aggre
 📂 **Queries and Outputs**
 ## 1. Extract Month from Order Date
    **Query**: SELECT EXTRACT(MONTH FROM '2017-06-15');
+   
 ✅ Helps in grouping and analyzing sales per month.
 
-## 2.  Group Customers by Country
-    **Query** :SELECT COUNT(customer_id), country
+## 2.Group Customers by Country
+     Query:SELECT COUNT(customer_id), country
            FROM customers
            GROUP BY country;
+           
 ✅ Shows how many customers belong to each country.
 
 ## 3. Calculate Total Quantity Sold
    **Query**: SELECT SUM(quantity)
           FROM orderdetails;
+          
 ✅ Useful for understanding total product demand.
 
 ## 4. Count Unique Products
    **Query**: SELECT COUNT(*)
           FROM products;
+          
 ✅ Determines the number of distinct products available.
 
 ## 5. Sort Products by Price
