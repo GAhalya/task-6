@@ -43,6 +43,7 @@ This project demonstrates how to perform sales trend analysis in SQL using aggre
 ## 5. Sort Products by Price
    **Query**: SELECT * FROM products
           ORDER BY price;
+          
 ✅ Helps in price-based analysis and finding top/bottom priced items.
 
 📈 **Insights You Can Derive**
